@@ -23,4 +23,4 @@ pytest
 - main.py — CLI
 - tests/ — тесты
 
-# Ветка feature
+# Новая Ветка
