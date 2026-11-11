@@ -16,11 +16,18 @@ python main.py --kind sine -n 20 --window 3 --alpha 0.3 --seed 7
 - `--save PATH` — сохранить ряд в JSON
 
 ## Тесты
-pytest
+python -m pytest -v
 
 ## Структура
 - num_series/num_series/ — модули
 - main.py — CLI
 - tests/ — тесты
 
-# Новая Ветка
+## Сохранение в файл
+python main.py --kind random -n 10 --save data.json
+
+## Загрузка из файла
+python main.py --load data.json --window 3
+
+## Проверка ошибок 
+python main.py -n -5
