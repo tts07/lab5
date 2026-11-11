@@ -22,3 +22,5 @@ pytest
 - num_series/num_series/ — модули
 - main.py — CLI
 - tests/ — тесты
+
+# Ветка feature
