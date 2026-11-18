@@ -63,6 +63,11 @@ def main():
     # Сохранение (если просили)
     if args.save:
         try:
+            import os
+            save_dir = os.path.dirname(args.save)
+            if save_dir and not os.path.exists(save_dir):
+                os.makedirs(save_dir, exist_ok=True)
+            
             save_series_json(data, args.save, meta={"source": source})
             print(f"Сохранено в {args.save} ({len(data)} точек)")
         except ValueError as e:
